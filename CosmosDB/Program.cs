@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CosmosDB.Model;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -14,7 +15,10 @@ namespace CosmosDB
         static void Main(string[] args)
         {
             InitializeConnection();
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting Inserting documents");
+            Insert();
+            Console.WriteLine("DONE!");
+            Console.ReadKey();
         }
 
         static void InitializeConnection()
@@ -22,8 +26,36 @@ namespace CosmosDB
             Console.WriteLine("Initializing the connection");
             _client = new MongoClient(new MongoUrl(_url));
             _database = _client.GetDatabase("CuttingTool");
-            _collection = _database.GetCollection<CuttingTool>(nameof(CuttingTool));
+            _collection = _database.GetCollection<CuttingTool>(nameof(CuttingTool).ToLower());
             Console.WriteLine("Finish initializing the conneciton");
+        }
+
+
+        static void Insert()
+        {
+            var cuttingTool = new CuttingTool
+            {
+                Id = "12345",
+                Name = "Milling tool",
+                Price = (decimal)100.25,
+                CuttingToolItems = new List<CuttingToolItem>
+                {
+                    new CuttingToolItem
+                    {
+                        Id = 6789,
+                        Name = "Insert 1",
+                        Count = 4
+                    },
+                    new CuttingToolItem
+                    {
+                        Id = 9876,
+                        Name = "Insert 2",
+                        Count = 4
+                    }
+                }
+            };
+
+            _collection.InsertOne(cuttingTool);
         }
     }
 }
