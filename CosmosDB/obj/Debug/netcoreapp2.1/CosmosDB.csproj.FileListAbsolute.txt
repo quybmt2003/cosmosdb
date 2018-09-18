@@ -1,0 +1,11 @@
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/bin/Debug/netcoreapp2.1/CosmosDB.deps.json
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/bin/Debug/netcoreapp2.1/CosmosDB.runtimeconfig.json
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/bin/Debug/netcoreapp2.1/CosmosDB.runtimeconfig.dev.json
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/bin/Debug/netcoreapp2.1/CosmosDB.dll
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/bin/Debug/netcoreapp2.1/CosmosDB.pdb
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/obj/Debug/netcoreapp2.1/CosmosDB.csprojAssemblyReference.cache
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/obj/Debug/netcoreapp2.1/CosmosDB.csproj.CoreCompileInputs.cache
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/obj/Debug/netcoreapp2.1/CosmosDB.AssemblyInfoInputs.cache
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/obj/Debug/netcoreapp2.1/CosmosDB.AssemblyInfo.cs
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/obj/Debug/netcoreapp2.1/CosmosDB.dll
+/Users/quynguyen/Documents/Study/CosmosDB/CosmosDB/obj/Debug/netcoreapp2.1/CosmosDB.pdb
